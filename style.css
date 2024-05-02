@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+#wrapper{
+    display: grid;
+    grid-template-rows: 20px .2fr 20px 1fr;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+#stockHeader{
+    grid-row: 2/3;
+    grid-column: 3/7;
+    text-align: center;
+}
+#connection-status {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+}
+#welcomeUser{
+    grid-row: 1/2;
+    grid-column: 3/7;
+    text-align: center;
+}
+#login{
+    grid-row: 3/4;
+    grid-column: 3/7;
+    text-align: center;
+
+}
+#stocksWrapper{
+    grid-row: 4/5;
+    grid-column: 3/8;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+#stockMarketHeader {
+    color: black;
+    margin-right: 30px;
+}
+.stock-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.stock-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 120px;
+}
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; /* Sets the text color to white for better contrast */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+.buy-button {
+    background-color: #28a745; /* Bootstrap green */
+}
+
+.sell-button {
+    background-color: #dc3545; /* Bootstrap red */
+}
+#notification-area {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+#loginButton{
+    background-color: black; /* Bootstrap red */
+
+}

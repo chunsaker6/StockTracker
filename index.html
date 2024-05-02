@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" type= "text/css" href= "style.css">
+        <meta charset="UTF-8">
+        <title>Stock Market WebSocket Client</title>
+        <script src="app.js"></script>
+    </head>
+    <body id="wrapper">
+        <div id="stockHeader">
+            <div id="welcomeUser"></div>
+            <h1 id="stockMarketHeader">Stock Market Updates</h1>
+            <div id="connection-status"></div>
+            <div id="login">
+                <label for="username">Enter your name:</label>
+                <input type="text" id="username" placeholder="Enter your name" />
+                <button id="loginButton" onclick="updateUserName()">Set Name</button>
+            </div>
+        </div>
+        <div id="stocksWrapper">
+            <div id="stocks"></div>
+            <div id="notification-area"></div>
+        </div>
+    </body>
+</html>
